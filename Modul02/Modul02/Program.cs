@@ -8,18 +8,45 @@ namespace Modul02
 		{
 		
 			//Дефиниране на променливи
-			int a=0, b=0;
+			int a = 0, b = 0;
 			int sum = 0;
 
 			//Събиране на числа
-			a=5; b=10; sum=a+b;
+			a = 10;
+			b = 5;
+			sum = a + b;
 
 			//Писане в козола 
 			Console.Write (a);
 			Console.Write (" + ");
 			Console.Write (b);
 			Console.Write (" = ");
-			Console.WriteLine(sum);
+			Console.WriteLine (sum);
+
+			// Допълнителни оператори
+			Console.WriteLine ("\nИзползване на +=");
+			a += b; // a=10 +5  : a=a+b
+			Console.WriteLine (a);
+
+			Console.WriteLine ("\nИзползване на -=");
+			a -= b;
+			Console.WriteLine (a);
+
+			Console.WriteLine ("\nИзползване на *=");
+			a *= b;
+			Console.WriteLine (a);
+
+			Console.WriteLine ("\nИзползване на ++");
+			a++;
+			Console.WriteLine (a);
+
+			a = 15; b = 10;
+
+			Console.WriteLine ("\nСтандартно делене");
+			Console.WriteLine (a/b); // 1
+
+			Console.WriteLine ("\nХващане на остатък");
+			Console.WriteLine (a%b); //5
 		}
 	}
 }
