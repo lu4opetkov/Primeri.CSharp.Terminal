@@ -8,12 +8,18 @@ namespace Modul02
 		{
 		
 			//Дефиниране на променливи
-
+			int a=0, b=0;
+			int sum = 0;
 
 			//Събиране на числа
-
+			a=5; b=10; sum=a+b;
 
 			//Писане в козола 
+			Console.Write (a);
+			Console.Write (" + ");
+			Console.Write (b);
+			Console.Write (" = ");
+			Console.WriteLine(sum);
 		}
 	}
 }
