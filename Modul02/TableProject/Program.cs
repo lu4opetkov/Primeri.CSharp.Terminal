@@ -26,7 +26,11 @@ namespace TableProject
 			Console.Write("Кой ред искате да видите: " );
 			int _index = Convert.ToInt32 (Console.ReadLine ())-1;
 
-			Console.WriteLine ((table[_index,(int)ti.ime])[0] +". " + table[_index,(int)ti.familia] + ", " + table[_index,(int)ti.godini] + "г.");
+			Console.WriteLine (
+				(table[_index,(int)ti.ime])[0] +". " + 
+				 table[_index,(int)ti.familia] + ", " + 
+				 table[_index,(int)ti.godini] + "г.");
+			Console.ReadKey ();
 		}
 	}
 }
