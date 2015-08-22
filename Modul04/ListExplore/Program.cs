@@ -39,20 +39,20 @@ namespace ListExplore
 
 				if (_userinput.Contains("show"))
 				{
-					Console.Write("list: ");
-					for (int i = 0; i < _list.Count; i++)
-					{
-						Console.Write(_list[i]);
-						if (i != _list.Count-1) Console.Write(", ");
+					Console.Write("Списък: ");
 
-					}
+						foreach(int value in _list)
+						{
+							Console.Write(value.ToString() + ", ");
+						}
+
 					Console.WriteLine();
 				}
 				//Размер на list
 
 				if (_userinput.ToLower().Contains("size"))
 				{
-					Console.WriteLine("размер на списъка:" + _list.Count.ToString() + "\n\n");
+					Console.WriteLine("\nразмер на списъка:" + _list.Count.ToString() + "\n\n");
 				}
 
 			}
