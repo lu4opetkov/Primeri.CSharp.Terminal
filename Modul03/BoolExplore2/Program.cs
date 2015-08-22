@@ -15,40 +15,59 @@ namespace BoolExplore2
 			_input = Console.ReadLine ();
 
 			bool _chek01 = int.TryParse (_input, out _ui);
+
+
+
+			try
+			{
+				Console.Write("Елемент " + _ui.ToString () +" e " );
+				Console.WriteLine( _i[_ui -1 ]);
+			}
+			catch
+			{
+				Console.WriteLine("<Недефиниран елемент>" );
+			}
+
+
+//			Използване на логическо присвояване
+
 //			_ui =(_ui >= _i.Length) ? _ui : 3;
 //			_ui =(_ui < 0) ? _ui : 1;
 
 
-			switch (_ui) {
-			case 1:
-				{
-					Console.Write ("1ви елемент на масива ");
-					Console.WriteLine(_i[_ui-1]);
-					break;
-				}
-			case 2:
-				{
-					Console.Write ("2ри елемент на масива ");
-					Console.WriteLine(_i[_ui-1]);
-					break;
-				}
-			case 3:
-				{
-					Console.Write ("3ти елемент на масива ");
-					Console.WriteLine(_i[_ui-1]);
-					break;
-				}
-			default:
-				{
-					Console.Write ("В масива няма стойност за този индекс\n\nОпитайте с индекс (1-3)\n\n");
-					break;
-				}
+
+// 			Използване на SWICH
+
+//			switch (_ui) {
+//			case 1:
+//				{
+//					Console.Write ("1ви елемент на масива ");
+//					Console.WriteLine(_i[_ui-1]);
+//					break;
+//				}
+//			case 2:
+//				{
+//					Console.Write ("2ри елемент на масива ");
+//					Console.WriteLine(_i[_ui-1]);
+//					break;
+//				}
+//			case 3:
+//				{
+//					Console.Write ("3ти елемент на масива ");
+//					Console.WriteLine(_i[_ui-1]);
+//					break;
+//				}
+//			default:
+//				{
+//					Console.Write ("В масива няма стойност за този индекс\n\nОпитайте с индекс (1-3)\n\n");
+//					break;
+//				}
 			
 			}
 
 //			if (_chek01) {
 //				Console.WriteLine (_i [_ui - 1]);
-			}
+			
 		}
 	}
 
