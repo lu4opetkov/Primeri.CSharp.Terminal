@@ -28,27 +28,24 @@ namespace Modul05
 						{
 							Console.WriteLine("Командата не е въведена коректно");	
 						}
-
 					}
 				if (_usercommand.Contains("cmd04")) 
-				{
-					double _t = 5, _c = -2;
-					if (cmd04 (ref _t))
 					{
-						Console.WriteLine(_t);
+						double _t = 5, _c = -2;
+						if (cmd04 (ref _t))
+						{
+							Console.WriteLine(_t);
+						}
+						if (cmd04 (ref _c))
+						{
+							Console.WriteLine(_t);
+						}
 					}
-					if (cmd04 (ref _c))
-					{
-						Console.WriteLine(_t);
-					}
-				}
-
 				if (_usercommand.Contains("cmd05"))
-				{
+					{
 
-					Console.WriteLine ("\nБрой четни числа: "+ cmd05(_usercommand).Length.ToString());
-				}
-
+						Console.WriteLine ("\nБрой четни числа: "+ cmd05(_usercommand).Length.ToString());
+					}
 			}
 			while(_usercommand != "exit");
 		}
