@@ -5,10 +5,23 @@ namespace ClassExplore
 	public class person
 	{
 		public string simpleString = "Тестова променлива от клас";
+		private string hidenString = "";
+		public string user = "";
 
-		public person()
+		public person (string _ini)
+
 		{
-			simpleString = "Промяна на променлива при инициализиранме ";
+			if (_ini == "password1")  hidenString = "Потребител 1";
+			if (_ini == "password2")  hidenString = "Потребител 2";
+
+			user = hidenString;
+
+			if (hidenString.Length > 0)
+				simpleString = "Добре дошли отново ," + user +"!!!"; 
+			else 
+				simpleString ="Вие нямате достъп до тази програма !!!";
+
+		
 		}
 	}
 
@@ -16,8 +29,10 @@ namespace ClassExplore
 	{
 		public static void Main (string[] args)
 		{
-			// Дефиниране на клас
-			person _person = new person();
+
+			Console.Write("ПАРОЛА: "); string _user = Console.ReadLine ();
+				// Дефиниране на клас;
+			person _person = new person(_user);
 
 			// Достъпване на клас
 			Console.WriteLine (_person.simpleString);
